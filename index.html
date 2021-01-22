@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8" />
+    <title>EJP: Home</title>
+    <!--Skripty-->
+    <script src="src/c/initialize.js"></script>
+    <script src="src/m/Pomucka.js"></script>
+    <script src="src/script.js"></script>
+    <!--Styly-->
+    <link rel="stylesheet" href="css/zakladni.css" >
+    <link rel="stylesheet" href="css/styl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Fonty-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"   rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <header>
+        <h1>Evidence jazykových pomůcek</h1>
+        <h2>Kabinet AJ</h2>
+    </header>
+    <nav>
+        <ul>
+        <li class="aktivni"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="vypisVsechnyPomucky.html"><i class="fa fa-book"></i> Vypiš všechny pomůcky</a></li>
+        <li><a href="vytvorPomucku.html"><i class="fa fa-plus"></i> Přidej pomůcku</a></li>
+        <li><a href="editujPomucku.html"><i class="fa fa-pencil"></i> Edituj pomůcku</a></li>
+        <li><a href="smazPomucku.html"><i class="fa fa-times"></i> Smaž pomůcku</a></li>
+        <li class="pravy" onclick="on()"><span class="info"><i class="fa fa-info"></i></span></li>
+        
+        </ul>        
+    </nav>
+    <section>
+        <div id="overlay" onclick="off()">       <!-- tady se vypíše text přes stránku a po kliknutí zmizí -->
+            <div id="text_overlay"></div>
+            <span id="text_overlay2"></span> </div>
+        </div>
+        <h2>Testování aplikace:</h2>
+        <p>&nbsp;</p>
+        <button class="btn" type="button" onclick="Pomucka.smazVse()">Smazat celý seznam</button>
+        <button class="btn" type="button" onclick="Pomucka.generujTestData()">Naplnit testovacími daty</button>
+    </section>
+    
+    <footer>
+        <p><i class="fa fa-copyright"></i> FM, 2020</p>
+    </footer>
+</body>
+</html>
