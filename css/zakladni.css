@@ -1,0 +1,81 @@
+*, :after, :before {                       
+    margin: 0;            
+    padding: 0;           
+    box-sizing: border-box;    
+} 
+* {
+    font-family: calibri; 
+ }
+
+body {
+    background: url("../img/knihovna-amsterdam.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    
+}
+
+h1 {                  
+    font-family: "Dancing Script";
+    text-align: center;
+    color: rgb(222,184,135);
+    font-size: 70px;
+    padding-bottom: 40px;
+}
+h2 {                  
+    text-align: center;
+    color: rgb(222,184,135);
+}
+nav, header, section, footer {
+    max-width: 1000px;   
+    margin: 1px auto;    
+    background: #eee;    
+    padding: 20px 50px;  
+    text-align: center;
+}
+header {
+    margin-top: 50px;
+}
+nav ul {
+     list-style-type: none;
+     overflow: hidden;
+     background-color: lightslategray;
+}
+nav li {
+    float: left;
+    background-color: darkgoldenrod;
+    border-right: 1px solid #eee;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px ;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: slategray;
+}
+
+.aktivni {
+    background-color: sienna;
+}
+nav .pravy {
+    float: right;
+    border-left: 1px solid #eee;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px ;
+    text-decoration: none
+}
+nav .pravy:hover {
+        cursor: pointer;
+}
+footer {
+    text-align: center;
+    font-style: italic;
+    color: slategray;
+}
